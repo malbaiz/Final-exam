@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem - Mazen Albaiz</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2problme.css" />
+    <script src="js/Exam2problem.js"></script>
+</head>
+<body>
+    <h1>Exam - 2</h1> 
+    <hr>
+    <section id="title">
+				<select onchange="MenuChoice()" id="menu">
+					<option>Please select an option</option>
+					<option>Get All Categories</option>
+                    <option>Add A Product Category</option>
+                    <option>Change A Description for A Category</option>
+					<option>Delete A Category</option>
+					<option>About Me!!</option>
+				</select>
+	</section>
+	 
+	<section id="section1" class="section1">
+        <div class="scrollable">
+        <button onclick="GetCategories()" id="Catigoris">Get All Categories</button> 
+        <hr> 
+        <br> 
+        <label id="Categorydisplay">Display Customer List Here</label>
+        </div>
+    </section>
+	
+    <section id="section2" class="section2">
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th><label>Pleaes enter Category Name: </label></th>
+                <th><input type="text" id="catName"></th>
+            </tr>
+            <tr>
+                <th><label>Pleaes enter Category Description: </label></th>
+                <th><input type="text" id="catDescription"></th>
+            </tr>
+            <tr>
+                <tr><th><button onclick="CreateNewCategory()" id="newcust">Add New Category</button></th></tr>
+            </tr>
+        </table>
+    </section>
+	
+	
+    <section id="section3" class="section3">
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th><label>Please Enter Category ID to be modified:</label></th>
+                <th><input type="text" id="catID"></th>
+            </tr>
+            <tr>
+                <th><label>Please enter new Description:</label></th>
+                 <th><input type="text" id="categoryDescription"></th>
+            </tr>
+            <tr>
+               <th><button onclick="categoryUpdate()" id="categoryUpdate">Update Category Description</button></th>
+            </tr>
+        </table>
+        
+    </section>
+    <section id="section4" class="section4">
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th><label>Please Enter Category ID to be Deleted:</label></th>
+                <th><input type="text" id="cID"></th>
+            </tr>
+            <tr>
+               <th><button onclick="DeleteCat()" id="customerdelete">Delete Category</button></th>
+            </tr>
+        </table>
+    </section>
+	<section id="section5" class="section5">
+        <hr>
+        <br>
+		<label>My name is Mazen Albaiz and I am an IS major, I will graduate next fall.
+		I learn how to make an application of devices.
+		I enjoyed this class by learning codes and developing some applications.</label>
+    </section>
+</body>
+</html>
